@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiztron Tech Club — Igniting Innovation, Engineering the Future</title>
+  <meta name="description" content="Wiztron is the premier student technology and innovation club. Explore Product Management, Software Development, Hardware, and Public Relations. Join us today!">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Particle Canvas -->
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Go to Wiztron homepage">
+        <img src="assets/logo.png" alt="Wiztron logo" class="brand-mark" loading="eager">
+        <span class="brand-name">WIZTRON<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="#domains" class="nav-link"><i class="fa-solid fa-cubes"></i> Domains</a>
+        <a href="#events" class="nav-link"><i class="fa-solid fa-calendar-check"></i> Events</a>
+        <a href="#team" class="nav-link"><i class="fa-solid fa-users"></i> Technical Team</a>
+        <a href="#gallery" class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-glow open-register-btn">
+          <i class="fa-solid fa-user"></i> Join Us
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <button class="mobile-close" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="drawer-content">
+      <a href="#about" class="drawer-link"><i class="fa-solid fa-circle-info"></i> About Us</a>
+      <a href="#domains" class="drawer-link"><i class="fa-solid fa-cubes"></i> Club Domains</a>
+      <a href="#events" class="drawer-link"><i class="fa-solid fa-calendar-check"></i> Events & Achievements</a>
+      <a href="#team" class="drawer-link"><i class="fa-solid fa-users"></i> Technical Team</a>
+      <a href="#gallery" class="drawer-link"><i class="fa-solid fa-images"></i> Activity Gallery</a>
+      <a href="#contact" class="drawer-link"><i class="fa-solid fa-paper-plane"></i> Contact & Socials</a>
+      <button class="btn btn-glow drawer-register-btn open-register-btn"><i class="fa-solid fa-user"></i> Register Now</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          <i class="fa-solid fa-bolt"></i> Member Recruitment 2026-27 is LIVE
+        </div>
+
+        <h1 class="hero-title">
+          Igniting Innovation,<br>
+          <span class="gradient-text">Engineering the Future</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Wiztron is the ultimate student technology & innovation powerhouse. We empower creators, programmers, hardware engineers, and designers to build cutting-edge projects and win top hackathons.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-glow btn-lg open-register-btn">
+            <i class="fa-solid fa-rocket"></i> Register / Join Us
+          </button>
+          <a href="#domains" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-compass"></i> Explore Domains
+          </a>
+        </div>
+
+        <!-- Quick Stats Banner -->
+        <div class="stats-banner">
+          <div class="stat-item">
+            <span class="stat-number" data-target="500">500+</span>
+            <span class="stat-label">Active Members</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="45">45+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="22">22+</span>
+            <span class="stat-label">Hackathons Won</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="35">35+</span>
+            <span class="stat-label">Workshops Held</span>
+          </div>
+        </div>
+
+        <!-- Hero Feature Showcase Graphic Card -->
+        <div class="hero-preview-card glass-card">
+          <div class="preview-header">
+            <div class="window-controls">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="preview-title"><i class="fa-solid fa-terminal"></i> wiztron_hub_v4.2.0_live_console</div>
+            <div class="status-chip"><i class="fa-solid fa-signal"></i> Operational</div>
+          </div>
+          <div class="preview-body">
+            <img src="assets/illustrations/hero-visual.svg" alt="Wiztron Tech Dashboard Visual" class="hero-img" loading="lazy">
+            <div class="preview-overlay-tag">
+              <i class="fa-solid fa-microchip"></i> Autonomous AI & Robotics Engine Active
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> WHO WE ARE</span>
+          <h2 class="section-title">About <span class="gradient-text">Wiztron</span></h2>
+          <p class="section-desc">Pioneering the intersection of artificial intelligence, software engineering, robotics, and creative digital design.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content glass-card">
+            <h3 class="about-heading"><i class="fa-solid fa-bullseye"></i> Our Mission & Vision</h3>
+            <p class="about-text">
+              Founded with the goal of fostering a culture of technological excellence, Wiztron serves as an incubator for passionate student builders. We bridge the gap between academic theory and real-world industrial impact through hands-on hackathons, research sprints, and open-source contributions.
+            </p>
+            <div class="about-features">
+              <div class="feature-pill">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                  <h4>Hands-on Learning</h4>
+                  <p>Build production-ready apps & hardware from day one.</p>
+                </div>
+              </div>
+              <div class="feature-pill">
+                <i class="fa-solid fa-trophy"></i>
+                <div>
+                  <h4>Hackathon Dominance</h4>
+                  <p>Dedicated mentorship and funded travel for top competitions.</p>
+                </div>
+              </div>
+              <div class="feature-pill">
+                <i class="fa-solid fa-network-wired"></i>
+                <div>
+                  <h4>Industry Network</h4>
+                  <p>Direct referral channels and workshops led by alumni tech leaders.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual glass-card">
+            <img src="assets/illustrations/about-visual.svg" alt="Wiztron innovation illustration" class="about-chip-img" loading="lazy">
+            <div class="visual-badge">
+              <i class="fa-solid fa-atom"></i> Quantum Tech & AI Innovation Hub
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOMAINS / TEAMS SECTION -->
+    <section class="section domains-section" id="domains">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> SPECIALIZATIONS</span>
+          <h2 class="section-title">Club <span class="gradient-text">Domains</span></h2>
+          <p class="section-desc">Each domain at Wiztron drives strategy, engineering, and community impact with intention and excellence.</p>
+        </div>
+
+        <div class="domains-grid">
+          <div class="domain-card glass-card reveal">
+            <div class="domain-icon-wrapper product-theme">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="domain-title">Product Management</h3>
+            <p class="domain-desc">Responsible for product strategy, planning, execution, documentation, market research, feature prioritization and managing product development.</p>
+            <div class="domain-lead-card">
+              <img src="assets/avatars/team.svg" alt="Product management lead placeholder" class="domain-avatar" loading="lazy">
+              <div>
+                <h4>Lead: Traveet Nagpal</h4>
+                <p>Driving product clarity and execution.</p>
+              </div>
+            </div>
+            <div class="domain-footer">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:traveet@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="domain-card glass-card reveal">
+            <div class="domain-icon-wrapper software-theme">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="domain-title">Software Development</h3>
+            <p class="domain-desc">Responsible for software engineering, web applications, app development, backend systems, APIs and software projects.</p>
+            <div class="domain-lead-card">
+              <img src="assets/avatars/team.svg" alt="Software development lead placeholder" class="domain-avatar" loading="lazy">
+              <div>
+                <h4>Lead: Aaditi Srivastava</h4>
+                <p>Building resilient digital experiences.</p>
+              </div>
+            </div>
+            <div class="domain-footer">
+              <a href="https://www.linkedin.com/in/aaditi-srivastava-786417378?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="action-pill">LinkedIn</a>
+              <a href="mailto:aaditi@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="domain-card glass-card reveal">
+            <div class="domain-icon-wrapper hardware-theme">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3 class="domain-title">Hardware</h3>
+            <p class="domain-desc">Responsible for embedded systems, electronics, IoT, robotics, PCB design and hardware innovation.</p>
+            <div class="domain-lead-card">
+              <img src="assets/avatars/team.svg" alt="Hardware lead placeholder" class="domain-avatar" loading="lazy">
+              <div>
+                <h4>Lead: Keshav</h4>
+                <p>Turning hardware ideas into real prototypes.</p>
+              </div>
+            </div>
+            <div class="domain-footer">
+              <a href="https://www.linkedin.com/in/keshav-dhoopar-930020374" target="_blank" rel="noopener noreferrer" class="action-pill">LinkedIn</a>
+              <a href="mailto:keshav@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="domain-card glass-card reveal">
+            <div class="domain-icon-wrapper pr-theme">
+              <i class="fa-solid fa-broadcast-tower"></i>
+            </div>
+            <h3 class="domain-title">Public Relations (PR)</h3>
+            <p class="domain-desc">Responsible for branding, sponsorships, partnerships, outreach, social media and event promotions.</p>
+            <div class="domain-lead-card">
+              <img src="assets/avatars/team.svg" alt="PR lead placeholder" class="domain-avatar" loading="lazy">
+              <div>
+                <h4>Lead: Shubodeep</h4>
+                <p>Connecting Wiztron with the wider community.</p>
+              </div>
+            </div>
+            <div class="domain-footer">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:shubodeep@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS, WORKSHOPS & ACHIEVEMENTS SECTION -->
+    <section class="section events-section" id="events">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-calendar-star"></i> UPDATES</span>
+          <h2 class="section-title">Upcoming <span class="gradient-text">Events</span></h2>
+          <p class="section-desc">Stay tuned while we prepare fresh experiences for the Wiztron community.</p>
+        </div>
+        <div class="empty-state glass-card reveal">
+          <img src="assets/illustrations/no-events.svg" alt="No upcoming events illustration" class="empty-state-illustration" loading="lazy">
+          <h3>No upcoming events currently.</h3>
+          <p>Stay tuned for exciting announcements!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workshops-section" id="workshops">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> LEARNING</span>
+          <h2 class="section-title">Past <span class="gradient-text">Workshops</span></h2>
+          <p class="section-desc">This space will soon feature the knowledge sessions and hands-on events we host.</p>
+        </div>
+        <div class="empty-state glass-card reveal">
+          <img src="assets/illustrations/no-workshops.svg" alt="No workshops illustration" class="empty-state-illustration" loading="lazy">
+          <h3>No workshops have been added yet.</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> SUCCESS</span>
+          <h2 class="section-title">Achievements</h2>
+          <p class="section-desc">We are preparing a showcase of milestone wins and community impact.</p>
+        </div>
+        <div class="empty-state glass-card reveal">
+          <img src="assets/illustrations/no-events.svg" alt="Achievements coming soon illustration" class="empty-state-illustration" loading="lazy">
+          <h3>Achievements will be updated soon.</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP SECTION -->
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> LEADERSHIP</span>
+          <h2 class="section-title">Meet the <span class="gradient-text">Leadership</span></h2>
+          <p class="section-desc">The people steering Wiztron's direction with vision, discipline, and momentum.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/aditya.svg" alt="Aditya Raj Saxena portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Aditya Raj Saxena</h3>
+            <span class="team-role president"><i class="fa-solid fa-crown"></i> President</span>
+            <p class="team-bio">Guiding the club's strategic vision and nurturing a thriving culture of innovation.</p>
+            <div class="team-socials">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:aditya@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/janvi.svg" alt="Janvi portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Janvi</h3>
+            <span class="team-role vp"><i class="fa-solid fa-user-shield"></i> Club Secretary</span>
+            <p class="team-bio">Managing club coordination, communication, and operations with precision and care.</p>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/janvi-tiwari-9283a137a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="action-pill">LinkedIn</a>
+              <a href="mailto:janvi@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/sarthak.svg" alt="Sarthak portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Sarthak</h3>
+            <span class="team-role lead"><i class="fa-solid fa-rocket"></i> Assistant Project Manager</span>
+            <p class="team-bio">Keeping projects organized and teams aligned from planning through delivery.</p>
+            <div class="team-socials">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:sarthak@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section technical-team-section" id="technical-team">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-users"></i> TECHNICAL TEAM</span>
+          <h2 class="section-title"><span class="gradient-text">Technical Team</span></h2>
+          <p class="section-desc">The builders, operators, and connectors shaping Wiztron's day-to-day momentum.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/aditya.svg" alt="Aditya Raj Saxena portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Aditya Raj Saxena</h3>
+            <span class="team-role president">President</span>
+            <div class="team-socials">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:aditya@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/janvi.svg" alt="Janvi portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Janvi</h3>
+            <span class="team-role vp">Club Secretary</span>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/janvi-tiwari-9283a137a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="action-pill">LinkedIn</a>
+              <a href="mailto:janvi@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/sarthak.svg" alt="Sarthak portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Sarthak</h3>
+            <span class="team-role lead">Assistant Project Manager</span>
+            <div class="team-socials">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:sarthak@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/team.svg" alt="Traveet Nagpal portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Traveet Nagpal</h3>
+            <span class="team-role lead">Product Management Lead</span>
+            <div class="team-socials">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:traveet@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/team.svg" alt="Aaditi Srivastava portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Aaditi Srivastava</h3>
+            <span class="team-role lead">Software Lead</span>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/aaditi-srivastava-786417378?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="action-pill">LinkedIn</a>
+              <a href="mailto:aaditi@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/team.svg" alt="Keshav portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Keshav</h3>
+            <span class="team-role lead">Hardware Lead</span>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/keshav-dhoopar-930020374" target="_blank" rel="noopener noreferrer" class="action-pill">LinkedIn</a>
+              <a href="mailto:keshav@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+
+          <div class="team-card glass-card reveal">
+            <img src="assets/avatars/team.svg" alt="Shubodeep portrait" class="team-image" loading="lazy">
+            <h3 class="team-name">Shubodeep</h3>
+            <span class="team-role lead">PR Lead</span>
+            <div class="team-socials">
+              <button type="button" class="action-pill action-pill--disabled" aria-disabled="true" disabled>LinkedIn <span>Coming Soon</span></button>
+              <a href="mailto:shubodeep@wiztron.club" class="action-pill">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY OF CLUB ACTIVITIES SECTION -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-camera"></i> MOMENTS</span>
+          <h2 class="section-title">Gallery of <span class="gradient-text">Club Activities</span></h2>
+          <p class="section-desc">A glance into our vibrant club life, coding marathons, workshops, and tech fests.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery Item 1: Hackathon -->
+          <div class="gallery-card glass-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/illustrations/hero-visual.svg" alt="HackWiz Annual Hackathon 2026" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <i class="fa-solid fa-magnifying-glass gallery-zoom-icon"></i>
+                <div class="gallery-info">
+                  <h4>HackWiz 2026 Hackathon</h4>
+                  <span>36 hours of non-stop innovation & coding</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2: Workshop -->
+          <div class="gallery-card glass-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/illustrations/about-visual.svg" alt="Robotics & IoT Electronics Bootcamp" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <i class="fa-solid fa-magnifying-glass gallery-zoom-icon"></i>
+                <div class="gallery-info">
+                  <h4>Robotics & IoT Electronics Lab</h4>
+                  <span>Hands-on micro-controller soldering & testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3: TechFest -->
+          <div class="gallery-card glass-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/illustrations/no-events.svg" alt="Annual Wiztron Tech Summit" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <i class="fa-solid fa-magnifying-glass gallery-zoom-icon"></i>
+                <div class="gallery-info">
+                  <h4>Annual Tech Summit & Awards</h4>
+                  <span>Celebrating achievements in auditorium stage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & SOCIAL MEDIA LINKS SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-comments"></i> GET IN TOUCH</span>
+          <h2 class="section-title">Contact & <span class="gradient-text">Social Links</span></h2>
+          <p class="section-desc">Have questions or want to collaborate? Reach out to the Wiztron team!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details & Social Links -->
+          <div class="contact-info-card glass-card">
+            <h3 class="contact-heading"><i class="fa-solid fa-paper-plane"></i> Reach Out to Us</h3>
+            <p class="contact-sub">We welcome prospective members, sponsors, and guest mentors.</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <label>Email Address</label>
+                  <p><a href="mailto:contact@wiztron.club">contact@wiztron.club</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <label>Club Headquarter</label>
+                  <p>Innovation Center, Tech Building 4, Campus Ground</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <label>Meeting Hours</label>
+                  <p>Mon - Fri: 4:00 PM - 7:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-connect-box">
+              <h4>Connect With Our Community</h4>
+              <div class="social-links-grid">
+                <a href="https://www.instagram.com/cgcuniversity_wiztron?igsh=MWx1NWNpbHZtc2NwNQ==" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/wiztron-cgc-j/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://www.facebook.com/share/1JXZTvCFSy/" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card glass-card">
+            <h3 class="contact-heading"><i class="fa-solid fa-message"></i> Send Us a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Full Name</label>
+                <input type="text" id="contact-name" placeholder="John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" placeholder="john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" placeholder="General Inquiry / Sponsorship / Event" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-glow w-100"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MEMBER REGISTRATION MODAL -->
+  <div class="modal-backdrop" id="register-modal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-header">
+        <div class="modal-badge"><i class="fa-solid fa-user"></i> MEMBER REGISTRATION</div>
+        <h2>Join <span class="gradient-text">Wiztron Club</span></h2>
+        <p>Fill out the application form below to become an official member for the 2026-27 cohort.</p>
+      </div>
+
+      <form id="register-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-name"><i class="fa-solid fa-user"></i> Full Name *</label>
+            <input type="text" id="reg-name" placeholder="Alex Morgan" required>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-email"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+            <input type="email" id="reg-email" placeholder="alex@university.edu" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-year"><i class="fa-solid fa-graduation-cap"></i> Academic Year *</label>
+            <select id="reg-year" required>
+              <option value="" disabled selected>Select Year</option>
+              <option value="1st Year">1st Year (Freshman)</option>
+              <option value="2nd Year">2nd Year (Sophomore)</option>
+              <option value="3rd Year">3rd Year (Junior)</option>
+              <option value="4th Year">4th Year (Senior)</option>
+              <option value="Postgrad">Postgraduate / Ph.D.</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-domain"><i class="fa-solid fa-cubes"></i> Preferred Domain *</label>
+            <select id="reg-domain" required>
+              <option value="" disabled selected>Select Primary Domain</option>
+              <option value="Product Management">Product Management</option>
+              <option value="Software Development">Software Development</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Public Relations">Public Relations</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-portfolio"><i class="fa-solid fa-link"></i> GitHub / Portfolio Link (Optional)</label>
+          <input type="url" id="reg-portfolio" placeholder="https://github.com/yourusername">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-motivation"><i class="fa-solid fa-pen"></i> Why do you want to join Wiztron? *</label>
+          <textarea id="reg-motivation" rows="3" placeholder="Tell us about your technical interests, projects, or what you hope to achieve..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-glow w-100 btn-lg"><i class="fa-solid fa-check-circle"></i> Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL FOR GALLERY IMAGES -->
+  <div class="lightbox-backdrop" id="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="Enlarged gallery view" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <section class="section social-section" id="social">
+    <div class="container">
+      <div class="social-panel glass-card reveal">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-share-nodes"></i> COMMUNITY</span>
+          <h2 class="section-title">Connect With <span class="gradient-text">Wiztron</span></h2>
+          <p class="section-desc">Stay connected with the community for updates, opportunities, and event announcements.</p>
+        </div>
+        <div class="social-links-grid social-links-grid--wide">
+          <a href="https://www.instagram.com/cgcuniversity_wiztron?igsh=MWx1NWNpbHZtc2NwNQ==" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="https://www.linkedin.com/company/wiztron-cgc-j/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://www.facebook.com/share/1JXZTvCFSy/" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+        </div>
+        <p class="social-message">Stay connected with Wiztron! Follow us on Instagram, LinkedIn, and Facebook to get updates about events, workshops, achievements, and exciting opportunities.</p>
+        <a href="https://www.instagram.com/cgcuniversity_wiztron?igsh=MWx1NWNpbHZtc2NwNQ==" target="_blank" rel="noopener noreferrer" class="btn btn-glow social-follow-btn">Follow Wiztron</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" aria-label="Go to Wiztron homepage">
+          <img src="assets/logo.png" alt="Wiztron logo" class="brand-mark" loading="lazy">
+          <span class="brand-name">WIZTRON<span class="brand-dot">.</span></span>
+        </a>
+        <p>Igniting Innovation, Engineering the Future. The official student tech club.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="#about">About Us</a>
+        <a href="#domains">Domains</a>
+        <a href="#events">Events</a>
+        <a href="#team">Technical Team</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+
+      <div class="footer-status">
+        <div class="status-pill">
+          <span class="pulse-green"></span> System Status: All Systems Operational
+        </div>
+        <p>© 2026 Wiztron Tech Club. Designed with ❤️ for innovators.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
